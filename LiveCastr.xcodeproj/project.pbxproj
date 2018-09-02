@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C36B70B26E37782F3B64A8BC /* libPods-LiveCastr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42D1F3ED1BCB69800F29B60 /* libPods-LiveCastr.a */; };
+		FEA538A0213B7A8C00E555AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA5389F213B7A8C00E555AB /* AppDelegate.m */; };
+		FEA538A8213B7A8E00E555AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA538A7213B7A8E00E555AB /* Assets.xcassets */; };
+		FEA538AB213B7A8E00E555AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA538A9213B7A8E00E555AB /* LaunchScreen.storyboard */; };
+		FEA538AE213B7A8E00E555AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538AD213B7A8E00E555AB /* main.m */; };
+		FEA538B7213B7AD100E555AB /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538B6213B7AD100E555AB /* SetupViewController.m */; };
+		FEA538BB213B7B0C00E555AB /* SetupView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538BA213B7B0C00E555AB /* SetupView.m */; };
+		FEA538BE213B7B3300E555AB /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538BD213B7B3300E555AB /* PaddedTextField.m */; };
+		FEA538C7213B819A00E555AB /* ChromeCastClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538C6213B819A00E555AB /* ChromeCastClient.m */; };
+		FEA538CE213B84C200E555AB /* UIBarButtonItem+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538CD213B84C200E555AB /* UIBarButtonItem+Cast.m */; };
+		FEA538D1213B8AA900E555AB /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA538D0213B8AA900E555AB /* ProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23349EE76FF0D1E143A1F81C /* Pods-LiveCastr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCastr.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCastr/Pods-LiveCastr.release.xcconfig"; sourceTree = "<group>"; };
+		D42D1F3ED1BCB69800F29B60 /* libPods-LiveCastr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveCastr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCE1F569A9094AC4103D0CE /* Pods-LiveCastr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCastr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCastr/Pods-LiveCastr.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA5389B213B7A8C00E555AB /* LiveCastr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCastr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA5389E213B7A8C00E555AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEA5389F213B7A8C00E555AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEA538A7213B7A8E00E555AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEA538AA213B7A8E00E555AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEA538AC213B7A8E00E555AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA538AD213B7A8E00E555AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEA538B5213B7AD100E555AB /* SetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		FEA538B6213B7AD100E555AB /* SetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		FEA538B9213B7B0C00E555AB /* SetupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupView.h; sourceTree = "<group>"; };
+		FEA538BA213B7B0C00E555AB /* SetupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetupView.m; sourceTree = "<group>"; };
+		FEA538BC213B7B3300E555AB /* PaddedTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddedTextField.h; sourceTree = "<group>"; };
+		FEA538BD213B7B3300E555AB /* PaddedTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddedTextField.m; sourceTree = "<group>"; };
+		FEA538C2213B7C5900E555AB /* Strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
+		FEA538C3213B7E5A00E555AB /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		FEA538C5213B819A00E555AB /* ChromeCastClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromeCastClient.h; sourceTree = "<group>"; };
+		FEA538C6213B819A00E555AB /* ChromeCastClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeCastClient.m; sourceTree = "<group>"; };
+		FEA538CC213B84C200E555AB /* UIBarButtonItem+Cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Cast.h"; sourceTree = "<group>"; };
+		FEA538CD213B84C200E555AB /* UIBarButtonItem+Cast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Cast.m"; sourceTree = "<group>"; };
+		FEA538CF213B8AA900E555AB /* ProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		FEA538D0213B8AA900E555AB /* ProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		FEA538D2213B98E100E555AB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEA53898213B7A8C00E555AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36B70B26E37782F3B64A8BC /* libPods-LiveCastr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D77DB8CD4D3A8F3482D9D970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D42D1F3ED1BCB69800F29B60 /* libPods-LiveCastr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E062C31BECC9067C7E585000 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBCE1F569A9094AC4103D0CE /* Pods-LiveCastr.debug.xcconfig */,
+				23349EE76FF0D1E143A1F81C /* Pods-LiveCastr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEA53892213B7A8C00E555AB = {
+			isa = PBXGroup;
+			children = (
+				FEA5389D213B7A8C00E555AB /* LiveCastr */,
+				FEA5389C213B7A8C00E555AB /* Products */,
+				E062C31BECC9067C7E585000 /* Pods */,
+				D77DB8CD4D3A8F3482D9D970 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEA5389C213B7A8C00E555AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5389B213B7A8C00E555AB /* LiveCastr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEA5389D213B7A8C00E555AB /* LiveCastr */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538C4213B817C00E555AB /* Services */,
+				FEA538C1213B7C5100E555AB /* Constants */,
+				FEA538B8213B7B0200E555AB /* Views */,
+				FEA538B4213B7AB400E555AB /* Controllers */,
+				FEA5389E213B7A8C00E555AB /* AppDelegate.h */,
+				FEA5389F213B7A8C00E555AB /* AppDelegate.m */,
+				FEA538A7213B7A8E00E555AB /* Assets.xcassets */,
+				FEA538A9213B7A8E00E555AB /* LaunchScreen.storyboard */,
+				FEA538AC213B7A8E00E555AB /* Info.plist */,
+				FEA538AD213B7A8E00E555AB /* main.m */,
+			);
+			path = LiveCastr;
+			sourceTree = "<group>";
+		};
+		FEA538B4213B7AB400E555AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538B5213B7AD100E555AB /* SetupViewController.h */,
+				FEA538B6213B7AD100E555AB /* SetupViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FEA538B8213B7B0200E555AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538CB213B84AB00E555AB /* Extensions */,
+				FEA538B9213B7B0C00E555AB /* SetupView.h */,
+				FEA538BA213B7B0C00E555AB /* SetupView.m */,
+				FEA538BC213B7B3300E555AB /* PaddedTextField.h */,
+				FEA538BD213B7B3300E555AB /* PaddedTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEA538C1213B7C5100E555AB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538C2213B7C5900E555AB /* Strings.h */,
+				FEA538C3213B7E5A00E555AB /* Colors.h */,
+				FEA538D2213B98E100E555AB /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FEA538C4213B817C00E555AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538C5213B819A00E555AB /* ChromeCastClient.h */,
+				FEA538C6213B819A00E555AB /* ChromeCastClient.m */,
+				FEA538CF213B8AA900E555AB /* ProgressHUD.h */,
+				FEA538D0213B8AA900E555AB /* ProgressHUD.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEA538CB213B84AB00E555AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FEA538CC213B84C200E555AB /* UIBarButtonItem+Cast.h */,
+				FEA538CD213B84C200E555AB /* UIBarButtonItem+Cast.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEA5389A213B7A8C00E555AB /* LiveCastr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA538B1213B7A8E00E555AB /* Build configuration list for PBXNativeTarget "LiveCastr" */;
+			buildPhases = (
+				E407B3CED5CA307D8CC9A930 /* [CP] Check Pods Manifest.lock */,
+				FEA53897213B7A8C00E555AB /* Sources */,
+				FEA53898213B7A8C00E555AB /* Frameworks */,
+				FEA53899213B7A8C00E555AB /* Resources */,
+				60D7766C655AEFB2FD52DA13 /* [CP] Embed Pods Frameworks */,
+				1F22577B2AC1AA210599EFF2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveCastr;
+			productName = LiveCastr;
+			productReference = FEA5389B213B7A8C00E555AB /* LiveCastr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEA53893213B7A8C00E555AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = LiveCastr;
+				TargetAttributes = {
+					FEA5389A213B7A8C00E555AB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = FEA53896213B7A8C00E555AB /* Build configuration list for PBXProject "LiveCastr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEA53892213B7A8C00E555AB;
+			productRefGroup = FEA5389C213B7A8C00E555AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEA5389A213B7A8C00E555AB /* LiveCastr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEA53899213B7A8C00E555AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA538AB213B7A8E00E555AB /* LaunchScreen.storyboard in Resources */,
+				FEA538A8213B7A8E00E555AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F22577B2AC1AA210599EFF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LiveCastr/Pods-LiveCastr-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.3.1_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.3.1_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCastr/Pods-LiveCastr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60D7766C655AEFB2FD52DA13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCastr/Pods-LiveCastr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E407B3CED5CA307D8CC9A930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveCastr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEA53897213B7A8C00E555AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA538BE213B7B3300E555AB /* PaddedTextField.m in Sources */,
+				FEA538C7213B819A00E555AB /* ChromeCastClient.m in Sources */,
+				FEA538CE213B84C200E555AB /* UIBarButtonItem+Cast.m in Sources */,
+				FEA538AE213B7A8E00E555AB /* main.m in Sources */,
+				FEA538B7213B7AD100E555AB /* SetupViewController.m in Sources */,
+				FEA538BB213B7B0C00E555AB /* SetupView.m in Sources */,
+				FEA538D1213B8AA900E555AB /* ProgressHUD.m in Sources */,
+				FEA538A0213B7A8C00E555AB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEA538A9213B7A8E00E555AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEA538AA213B7A8E00E555AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEA538AF213B7A8E00E555AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEA538B0213B7A8E00E555AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEA538B2213B7A8E00E555AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCE1F569A9094AC4103D0CE /* Pods-LiveCastr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LiveCastr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.LiveCastr.LiveCastr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEA538B3213B7A8E00E555AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23349EE76FF0D1E143A1F81C /* Pods-LiveCastr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LiveCastr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.LiveCastr.LiveCastr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEA53896213B7A8C00E555AB /* Build configuration list for PBXProject "LiveCastr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA538AF213B7A8E00E555AB /* Debug */,
+				FEA538B0213B7A8E00E555AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA538B1213B7A8E00E555AB /* Build configuration list for PBXNativeTarget "LiveCastr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA538B2213B7A8E00E555AB /* Debug */,
+				FEA538B3213B7A8E00E555AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEA53893213B7A8C00E555AB /* Project object */;
+}

@@ -1,0 +1,21 @@
+PODS:
+  - google-cast-sdk (4.3.1):
+    - google-cast-sdk/Core (= 4.3.1)
+    - Protobuf (~> 3.0)
+  - google-cast-sdk/Core (4.3.1):
+    - Protobuf (~> 3.0)
+  - Protobuf (3.6.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - google-cast-sdk (~> 4.3.1)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC CHECKSUMS:
+  google-cast-sdk: 3132919e696d2e88a3ee0667ed9c4b6b8b1cdeb0
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: e3e769ed9827844fb1af8da9a7676b00b11aa1a2
+
+COCOAPODS: 1.4.0
