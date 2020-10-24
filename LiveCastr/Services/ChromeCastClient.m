@@ -28,16 +28,16 @@
 }
 
 - (void)streamUrl:(NSURL *)url {
-    GCKMediaInformation *info = [[GCKMediaInformation alloc] initWithContentID:url.absoluteString
-                                                                    streamType:GCKMediaStreamTypeLive
-                                                                   contentType:@"application/x-mpegurl"
-                                                                      metadata:nil
-                                                                      adBreaks:nil
-                                                                  adBreakClips:nil
-                                                                streamDuration:INFINITY
-                                                                   mediaTracks:nil
-                                                                textTrackStyle:nil
-                                                                    customData:nil];
+    GCKMediaInformation *const info = [[GCKMediaInformation alloc] initWithContentID:url.absoluteString
+                                                                          streamType:GCKMediaStreamTypeLive
+                                                                         contentType:@"application/x-mpegurl"
+                                                                            metadata:nil
+                                                                            adBreaks:nil
+                                                                        adBreakClips:nil
+                                                                      streamDuration:INFINITY
+                                                                         mediaTracks:nil
+                                                                      textTrackStyle:nil
+                                                                          customData:nil];
     if (self.currentCastSession) {
         [self logFormat:@"Starting up session with info: %@", info];
         [self.currentCastSession.remoteMediaClient addListener:self];
@@ -58,8 +58,8 @@
 }
 
 - (void)setupClient {
-    GCKDiscoveryCriteria *criteria = [[GCKDiscoveryCriteria alloc] initWithApplicationID:self.appId];
-    GCKCastOptions *options = [[GCKCastOptions alloc] initWithDiscoveryCriteria:criteria];
+    GCKDiscoveryCriteria *const criteria = [[GCKDiscoveryCriteria alloc] initWithApplicationID:self.appId];
+    GCKCastOptions *const options = [[GCKCastOptions alloc] initWithDiscoveryCriteria:criteria];
     [GCKCastContext setSharedInstanceWithOptions:options];
     [GCKLogger sharedInstance].delegate = self;
 }
