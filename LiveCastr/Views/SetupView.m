@@ -23,9 +23,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self configureView];
-        [self registerForNotifications];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(didReceiveTextFieldDidChangeNotification:)
+                                                     name:UITextFieldTextDidChangeNotification
+                                                   object:self.urlTextField];
     }
-
     return self;
 }
 
@@ -38,14 +40,6 @@
                           action:@selector(didTapSubmitButton:)
                 forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.stackView];
-}
-
-- (void)registerForNotifications {
-    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-    [center addObserver:self
-               selector:@selector(didReceiveTextFieldDidChangeNotification:)
-                   name:UITextFieldTextDidChangeNotification
-                 object:self.urlTextField];
 }
 
 #pragma mark - Setters
